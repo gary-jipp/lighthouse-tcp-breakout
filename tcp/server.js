@@ -14,9 +14,7 @@ server.on("connection", (client) => {
   client.setEncoding("utf8");
   console.log("Someone connected!");
 
-
   // Once a client sends data, console.log it
-  client.write("Welcome to our server:\n");
   client.write("Enter command:");
 
   // // Menu for the rockets
@@ -30,18 +28,22 @@ server.on("connection", (client) => {
   client.on("data", (data) => {
     console.log(`Client says: [${data}]`);
 
-    const commands = data.split(" ");
-    if (commands[0].toLowerCase() === "get") {
-      const key = Number(commands[1]);
+    const lines = data.split("\r\n");
+    const command = lines[0].split(" ");
+
+    if (command[0].toLowerCase() === "get") {
+      const key = command[1];
       if (!database[key]) {
+        console.log("Invalid choice:");
         return client.write("Invalid choice:");
       }
 
-      // console.log(database[key]);
       client.write(database[key].description);
+      // client.end(); // Needed for Browser Testing
       return;
     }
 
+    console.log("Invalid command:");
     return client.write("Invalid command:");
   });
 

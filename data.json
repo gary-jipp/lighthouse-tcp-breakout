@@ -1,4 +1,8 @@
 {
+  "/": {
+    "name": "Falcon 1",
+    "description": "The Falcon 1 was the first privately developed liquid-fueled orbital launch vehicle. It was designed and manufactured by SpaceX. With a height of 22.25 meters and a maximum payload capacity of 670 kilograms to low Earth orbit, the Falcon 1 played a crucial role in the early stages of SpaceX's development."
+  },
   "1": {
     "name": "Falcon 1",
     "description": "The Falcon 1 was the first privately developed liquid-fueled orbital launch vehicle. It was designed and manufactured by SpaceX. With a height of 22.25 meters and a maximum payload capacity of 670 kilograms to low Earth orbit, the Falcon 1 played a crucial role in the early stages of SpaceX's development."

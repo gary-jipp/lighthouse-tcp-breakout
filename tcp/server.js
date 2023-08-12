@@ -7,23 +7,13 @@ const server = net.createServer();
 
 // Notify once a connection is made to our server
 server.on("connection", (client) => {
-
   console.log(client.constructor.name);  // Socket
 
   // Tell net that incoming data is printable text
   client.setEncoding("utf8");
   console.log("Someone connected!");
 
-  // Once a client sends data, console.log it
   client.write("Enter command:");
-
-  // // Menu for the rockets
-  // let rocketList = "";
-  // rocketsData.forEach((rocket, index) => {
-  //   rocketList += `${index + 1}. ${rocket.name}\n`;
-  // });
-
-  // client.write(rocketList);
 
   client.on("data", (data) => {
     console.log(`Client says: [${data}]`);

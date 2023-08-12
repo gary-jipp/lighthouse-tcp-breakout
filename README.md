@@ -7,7 +7,7 @@
 - [ ] TCP Node programming
 - [ ] Client & Server node apps
 - [ ] How is any of this related to Web Development?
-- [ ] Application protocols:
+- [ ] Application protocols
 
 ### OSI model
  - Don't really need to know it.

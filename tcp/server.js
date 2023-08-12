@@ -1,4 +1,5 @@
 const net = require("net");
+const database = require("../data.json");
 const PORT = 3000;
 
 // First creating the server
@@ -16,7 +17,7 @@ server.on("connection", (client) => {
 
   // Once a client sends data, console.log it
   client.write("Welcome to our server:\n");
-  client.write("Enter a command:");
+  client.write("Enter command:");
 
   // // Menu for the rockets
   // let rocketList = "";
@@ -28,16 +29,25 @@ server.on("connection", (client) => {
 
   client.on("data", (data) => {
     console.log(`Client says: [${data}]`);
-    // const rocketIndex = Number(data) - 1;
 
-    // const selectedRocket = rocketsData[rocketIndex];
+    const commands = data.split(" ");
+    if (commands[0].toLowerCase() === "get") {
+      const key = Number(commands[1]);
+      if (!database[key]) {
+        return client.write("Invalid choice:");
+      }
 
-    client.write("Message received: " + data);
+      // console.log(database[key]);
+      client.write(database[key].description);
+      return;
+    }
+
+    return client.write("Invalid command:");
   });
 
-  client.on("end", ()=>{
+  client.on("end", () => {
     console.log("Client left");
-  })
+  });
 });
 
 server.on("listening", () => {

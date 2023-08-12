@@ -5,20 +5,25 @@ const config = {
   host: "127.0.0.1"
 };
 
-const client = net.createConnection(config);
+const socket = net.createConnection(config);
 
-console.log(client.constructor.name);  // Socket
+console.log(socket.constructor.name);  // Socket
 
-client.setEncoding("utf8");
+socket.setEncoding("utf8");
 
-client.on("connect", (data) => {
+socket.on("connect", (data) => {
   console.log("Connected to Server");
 });
 
-client.on("data", (data) => {
+socket.on("data", (data) => {
   console.log(`${data}`);
 });
 
+socket.on("end", () => {
+  console.log("Disconnect");
+  process.exit();
+});
+
 process.stdin.on("data", (key) => {
-  client.write(key);
+  socket.write(key);
 });

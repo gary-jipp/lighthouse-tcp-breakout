@@ -1,0 +1,18 @@
+{
+  "/": {
+    "name": "Falcon 1",
+    "description": "The Falcon 1 was the first privately developed liquid-fueled orbital launch vehicle. It was designed and manufactured by SpaceX. With a height of 22.25 meters and a maximum payload capacity of 670 kilograms to low Earth orbit, the Falcon 1 played a crucial role in the early stages of SpaceX's development."
+  },
+  "1": {
+    "name": "Falcon 1",
+    "description": "The Falcon 1 was the first privately developed liquid-fueled orbital launch vehicle. It was designed and manufactured by SpaceX. With a height of 22.25 meters and a maximum payload capacity of 670 kilograms to low Earth orbit, the Falcon 1 played a crucial role in the early stages of SpaceX's development."
+  },
+  "2": {
+    "name": "Falcon 9",
+    "description": "The Falcon 9 is a two-stage orbital launch vehicle designed and manufactured by SpaceX. It stands at a height of 70 meters and has a maximum payload capacity of over 22,800 kilograms to low Earth orbit. With its reusable first stage and reliable performance, the Falcon 9 has become a workhorse for delivering satellites and resupplying the International Space Station."
+  },
+  "3": {
+    "name": "Falcon Heavy",
+    "description": "The Falcon Heavy is a reusable super heavy-lift launch vehicle developed by SpaceX. With a height of 70 meters and a maximum payload capacity of over 63,800 kilograms to low Earth orbit, it is one of the most powerful operational rockets in the world. The Falcon Heavy has the capability to launch large payloads or even entire spacecraft to destinations such as the Moon or Mars."
+  }
+}

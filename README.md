@@ -12,7 +12,7 @@
 ### OSI model
  - Don't really need to know it.
  - Just be aware of it
- - Takeaweay = separation of concerns
+ - Takeaway = separation of concerns
 
 ### Networking
 Things we care about:

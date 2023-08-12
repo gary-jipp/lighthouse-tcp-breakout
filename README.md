@@ -23,7 +23,7 @@ Things we care about:
 ### Client - Server
 Like a Phone Call
 - caller
-- callee?
+- called
 - Client Initiates the Interaction
 
 ### Protcols

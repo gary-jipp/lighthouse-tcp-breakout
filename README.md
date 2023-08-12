@@ -1,7 +1,7 @@
 # TCP Review
 
-- [ ] Brief Review of OSI model
-- [ ] Networking - things to know
+- [ ] Brief Review of Networking
+- [ ] Networking - things we need to know
 - [ ] Client Server
 - [ ] Network Protocols:  TCP / UDP
 - [ ] TCP Node programming

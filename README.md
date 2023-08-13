@@ -34,7 +34,7 @@ Like a Phone Call
 - TCP is Connection based
 - guaranteed delivery
 - guaranteed order
-- lets us know if something didn't get sebt
+- lets us know if something didn't get sent
 
 ### Node.js Modules
 - "net" Module - for TCP communications
